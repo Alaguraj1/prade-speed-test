@@ -3,11 +3,10 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 const HomeCategorySection = () => {
-    const router = useRouter(); 
+    const router = useRouter();
     return (
         <>
             <section className="section-gap">
-
                 <div className="row-container">
                     <div className="row">
                         <div className="col-12">
@@ -29,10 +28,15 @@ const HomeCategorySection = () => {
                                     <Image
                                         src="/assets/img/home/Catergories/1.jpg"
                                         alt="image-1"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
+                                        width={600}  // Set image width
+                                        height={400} // Set image height
+                                        layout="responsive"
+                                        quality={75} // Optional image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
+                                        onClick={() => {
                                             router.push({
                                                 pathname: "/shop",
-                                                query: { category: "finger_rings" }, // Your parameters
+                                                query: { category: "finger_rings" },
                                             });
                                         }}
                                     />
@@ -42,10 +46,15 @@ const HomeCategorySection = () => {
                                     <Image
                                         src="/assets/img/home/Catergories/2.jpg"
                                         alt="image-2"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
+                                        width={600}  // Set image width
+                                        height={400} // Set image height
+                                        layout="responsive"
+                                        quality={75} // Optional image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
+                                        onClick={() => {
                                             router.push({
                                                 pathname: "/shop",
-                                                query: { category: "necklaces" }, // Your parameters
+                                                query: { category: "necklaces" },
                                             });
                                         }}
                                     />
@@ -55,25 +64,33 @@ const HomeCategorySection = () => {
                                     <Image
                                         src="/assets/img/home/Catergories/3.jpg"
                                         alt="image-3"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
+                                        width={600}  // Set image width
+                                        height={400} // Set image height
+                                        layout="responsive"
+                                        quality={75} // Optional image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
                                         onClick={() => {
                                             router.push({
                                                 pathname: "/shop",
-                                                query: { category: "earrings" }, // Your parameters
+                                                query: { category: "earrings" },
                                             });
                                         }}
                                     />
                                 </div>
 
                                 <div className="col-xl-6 col-lg-6  category-section-4">
-
                                     <Image
                                         src="/assets/img/home/Catergories/4.jpg"
                                         alt="image-4"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
+                                        width={600}  // Set image width
+                                        height={400} // Set image height
+                                        layout="responsive"
+                                        quality={75} // Optional image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
+                                        onClick={() => {
                                             router.push({
                                                 pathname: "/shop",
-                                                query: { category: "short_necklaces" }, // Your parameters
+                                                query: { category: "short_necklaces" },
                                             });
                                         }}
                                     />
@@ -87,10 +104,16 @@ const HomeCategorySection = () => {
                                     <Image
                                         src="/assets/img/home/Catergories/5.jpg"
                                         alt="image-5"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
+                                        width={600}  // Set image width
+                                        height={400} // Set image height
+                                        layout="responsive"
+                                        quality={75} // Optional image quality
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
+                                        onClick={() => {
                                             router.push({
                                                 pathname: "/shop",
-                                                query: { category: "other_accessories" }, // Your parameters
+                                                query: { category: "other_accessories" },
                                             });
                                         }}
                                     />
@@ -100,10 +123,15 @@ const HomeCategorySection = () => {
                                     <Image
                                         src="/assets/img/home/Catergories/6.jpg"
                                         alt="image-6"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
+                                        width={600}  // Set image width
+                                        height={400} // Set image height
+                                        layout="responsive"
+                                        quality={75} // Optional image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
+                                        onClick={() => {
                                             router.push({
                                                 pathname: "/shop",
-                                                query: { category: "bangles__bracelets" }, // Your parameters
+                                                query: { category: "bangles__bracelets" },
                                             });
                                         }}
                                     />
@@ -113,7 +141,6 @@ const HomeCategorySection = () => {
                     </div>
                 </div>
             </section>
-
         </>
     );
 };
