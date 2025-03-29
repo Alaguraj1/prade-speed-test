@@ -21,37 +21,31 @@ const slider_data = [
         id: 1,
         img: slider_img_1,
         link: "/shop"
-        // url: "/shop?category=earrings",
     },
     {
         id: 2,
         img: slider_img_2,
         link: "/shop"
-        // url: "/shop?category=finger_rings",
     },
     {
         id: 3,
         img: slider_img_3,
         link: "/shop"
-        // url: "/shop?category=gold_plated_silver",
     },
     {
         id: 4,
         img: slider_img_4,
         link: "/shop"
-        // url: "/shop?category=earrings",
     },
     {
         id: 5,
         img: slider_img_5,
         link: "/shop"
-        // url: "/shop?category=finger_rings",
     },
     {
         id: 6,
         img: slider_img_6,
         link: "/shop"
-        // url: "/shop?category=gold_plated_silver",
     },
 ];
 
@@ -84,11 +78,14 @@ const HomeBanner = () => {
                         className="tp-slider-item-4 tp-slider-height-4 p-relative d-flex align-items-center"
                     >
                         <div className="tp-slider-thumb-4">
-                            <Link href={item?.link} >
+                            <Link href={item?.link}>
                                 <Image
                                     src={item.img}
                                     alt="slider img"
                                     className="mobile-view-width-change"
+                                    priority={i === 0} // First image has priority loading
+                                    layout="responsive" // Use responsive layout
+                                    quality={75} // Adjust quality for performance
                                     style={{
                                         borderRadius: "20px",
                                         objectFit: "cover",

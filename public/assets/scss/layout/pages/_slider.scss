@@ -6,6 +6,7 @@
 
 .#{$theme-prifix}-slider {
   $self: &;
+
   &-variation {
     &.is-light {
       #{$self} {
@@ -15,6 +16,7 @@
             border-color: rgba($color: $black, $alpha: 0.1);
           }
         }
+
         &-btn {
           & .tp-btn {
             &:hover {
@@ -24,10 +26,12 @@
             }
           }
         }
+
         &-dot {
           &.#{$theme-prifix}-swiper-dot {
             .swiper-pagination-bullet {
               background-color: rgba($color: $black, $alpha: 0.2);
+
               &.swiper-pagination-bullet-active {
                 background-color: var(--tp-theme-primary);
               }
@@ -37,15 +41,18 @@
       }
     }
   }
+
   &-active {
     & .swiper-slide-active {
       & #{$self} {
+
         &-title,
         &-content span,
         &-content p,
         &-btn a {
           @include animation-name();
         }
+
         &-thumb {
           & img {
             @include animation-name(fadeInRight);
@@ -60,6 +67,7 @@
           left: 40px;
           visibility: visible;
           opacity: 1;
+
           &.#{$theme-prifix}-slider-button-next {
             right: 40px;
           }
@@ -78,10 +86,12 @@
         border-color: rgba($color: #fff, $alpha: 0.2);
         visibility: hidden;
         opacity: 0;
+
         &.#{$theme-prifix}-slider-button-next {
           left: auto;
           right: 0px;
         }
+
         &:hover {
           background-color: var(--tp-common-white);
           border-color: var(--tp-common-white);
@@ -101,6 +111,7 @@
       &.#{$theme-prifix}-swiper-dot {
         .swiper-pagination-bullet {
           background-color: rgba($color: #fff, $alpha: 0.2);
+
           &.swiper-pagination-bullet-active {
             background-color: var(--tp-common-white);
           }
@@ -108,14 +119,16 @@
       }
     }
   }
+
   &-item {
     &.is-light {
       & #{$self} {
         &-title {
           color: var(--tp-heading-secondary);
         }
+
         &-content {
-          & > span {
+          &>span {
             color: var(--tp-heading-secondary);
           }
 
@@ -130,6 +143,7 @@
       }
     }
   }
+
   &-title {
     @extend %tp-ff-roboto;
     font-weight: 900;
@@ -147,8 +161,9 @@
       font-size: 37px;
     }
   }
+
   &-content {
-    & > span {
+    &>span {
       display: inline-block;
       @extend %tp-ff-roboto;
       font-size: 16px;
@@ -163,11 +178,13 @@
       font-size: 28px;
       margin-bottom: 40px;
       @include animation-control(0.7s);
+
       & span {
         display: inline-block;
         color: var(--tp-yellow-2);
         position: relative;
         z-index: 1;
+
         & svg {
           position: absolute;
           bottom: -21px;
@@ -177,10 +194,12 @@
       }
     }
   }
+
   &-thumb {
     & img {
       display: inline-block !important;
       @include animation-control(0.9s);
+
       @media #{$xs} {
         width: 100%;
         height: 100%;
@@ -188,6 +207,7 @@
       }
     }
   }
+
   &-btn {
     & .tp-btn {
       border: 1px solid var(--tp-common-white);
@@ -200,6 +220,7 @@
       }
     }
   }
+
   &-height {
     min-height: 516px;
 
@@ -207,6 +228,7 @@
       min-height: 816px;
     }
   }
+
   &-shape {
     &-1 {
       position: absolute;
@@ -216,18 +238,21 @@
       mix-blend-mode: luminosity;
       opacity: 0.1;
     }
+
     &-2 {
       position: absolute;
       bottom: 13%;
       right: 28%;
       z-index: -1;
     }
+
     &-3 {
       position: absolute;
       top: 8%;
       right: 33%;
       z-index: -1;
     }
+
     &-4 {
       position: absolute;
       top: 30%;
@@ -240,16 +265,19 @@
 // second home slider
 .#{$theme-prifix}-slider {
   $self2: &;
+
   &-active {
     &-2 {
       & .swiper-slide-active {
         & #{$self2} {
+
           &-title-2,
           &-content-2 span,
           &-content-2 p,
           &-btn-2 a {
             @include animation-name();
           }
+
           &-thumb-2 {
             & img {
               @include animation-name(fadeInRight);
@@ -259,6 +287,7 @@
       }
     }
   }
+
   &-2 {
     &-dot {
       &.tp-swiper-dot {
@@ -271,18 +300,22 @@
         width: auto;
         display: flex;
         flex-direction: column;
+
         @media #{$sm, $xs} {
           right: 25px;
         }
       }
+
       .swiper-pagination-bullet {
         background-color: rgba($color: $black, $alpha: 0.14);
         margin: 3px 0 !important;
+
         &.swiper-pagination-bullet-active {
           background-color: var(--tp-theme-secondary);
         }
       }
     }
+
     &-shape {
       &-1 {
         position: absolute;
@@ -293,6 +326,7 @@
       }
     }
   }
+
   &-title-2 {
     font-weight: 400;
     font-size: 100px;
@@ -311,14 +345,17 @@
     @media #{$sm} {
       font-size: 85px;
     }
+
     @media #{$xs} {
       font-size: 52px;
     }
   }
+
   &-content-2 {
     @media #{$sm, $xs} {
       padding-top: 100px;
     }
+
     & span {
       font-size: 20px;
       color: var(--tp-common-black);
@@ -327,9 +364,11 @@
       @include animation-control(0.1s);
     }
   }
+
   &-height-2 {
     min-height: 790px;
   }
+
   &-thumb-2 {
     &-gradient {
       position: absolute;
@@ -342,12 +381,14 @@
       background-color: rgba($color: #29c2e3, $alpha: 0.3);
       z-index: -1;
     }
+
     &-shape {
       &-1 {
         position: absolute;
         top: 24%;
         left: -10px;
       }
+
       &-2 {
         position: absolute;
         bottom: 25%;
@@ -362,6 +403,7 @@
       }
     }
   }
+
   &-btn-2 {
     & a {
       @include animation-control(0.5s);
@@ -372,10 +414,12 @@
 // third home slider
 .#{$theme-prifix}-slider {
   $self3: &;
+
   &-active {
     &-3 {
       & .swiper-slide-active {
         & #{$self3} {
+
           &-title-3,
           &-content-3 span,
           &-content-3 p,
@@ -387,6 +431,7 @@
       }
     }
   }
+
   &-3 {
     &-dot {
       &.tp-swiper-dot {
@@ -399,19 +444,23 @@
         width: auto;
         display: flex;
         flex-direction: column;
+
         @media #{$sm, $xs} {
           right: 25px;
         }
       }
+
       .swiper-pagination-bullet {
         background-color: rgba($color: $white, $alpha: 0.3);
         margin: 3px 0 !important;
+
         &.swiper-pagination-bullet-active {
           background-color: var(--tp-common-white);
         }
       }
     }
   }
+
   &-title-3 {
     font-weight: 400;
     font-size: 100px;
@@ -431,12 +480,14 @@
     @media #{$sm} {
       font-size: 85px;
     }
+
     @media #{$xs} {
       font-size: 52px;
     }
   }
+
   &-content-3 {
-    & > span {
+    &>span {
       font-family: var(--tp-ff-charm);
       font-weight: 400;
       font-size: 30px;
@@ -446,6 +497,7 @@
       margin-bottom: 8px;
     }
   }
+
   &-height-3 {
     min-height: 950px;
 
@@ -461,6 +513,7 @@
       min-height: 650px;
     }
   }
+
   &-thumb-3 {
     position: absolute;
     top: 0;
@@ -475,30 +528,32 @@
       top: 0;
       width: 100%;
       height: 100%;
-      @include tp-gradient(
-        (
-          101.74% 101.74% at 68.02% 59.68%,
+      @include tp-gradient((101.74% 101.74% at 68.02% 59.68%,
           rgba(15, 1, 5, 0) 27.48%,
-          rgba(15, 1, 5, 0.5) 86.14%
-        ),
+          rgba(15, 1, 5, 0.5) 86.14%),
         "radial"
       );
     }
   }
+
   &-btn-3 {
     & a {
       @include animation-control(0.7s);
     }
   }
+
   &-feature {
     &-3 {
       @include animation-control(0.5s);
     }
+
     &-item-3 {
       position: relative;
+
       &:not(:last-child) {
         margin-right: 28px;
         padding-right: 30px;
+
         &::after {
           position: absolute;
           content: "";
@@ -515,12 +570,14 @@
         }
       }
     }
+
     &-title-3 {
       font-weight: 400;
       font-size: 16px;
       line-height: 1.25;
       color: var(--tp-common-white);
     }
+
     &-icon-3 {
       & span {
         font-size: 35px;
@@ -533,6 +590,7 @@
       }
     }
   }
+
   &-arrow-3 {
     & button {
       position: absolute;
@@ -542,6 +600,7 @@
       opacity: 0.3;
       @extend %translateY1_2;
       z-index: 1;
+
       &:hover {
         opacity: 1;
       }
@@ -557,10 +616,12 @@
       &.#{$theme-prifix}-slider-3-button-next {
         left: auto;
         right: 50px;
+
         @media #{$xl} {
           left: auto;
           right: 10px;
         }
+
         @media #{$lg, $md, $sm, $xs} {
           left: auto;
           right: 0;
@@ -573,19 +634,23 @@
 // forth home slider
 .#{$theme-prifix}-slider {
   $self3: &;
+
   &-active {
     &-4 {
       & .slick-slide.slick-active {
         & #{$self3} {
+
           &-title-4,
           &-content-4,
           &-content-4 span,
           &-btn-4 a {
             @include animation-name();
           }
+
           &-thumb-4 img {
             @include animation-name(fadeInRight);
           }
+
           &-thumb-4-shape-1,
           &-thumb-4-shape-2 {
             @include transform(translateX(-50%) scale(1));
@@ -595,6 +660,7 @@
       }
     }
   }
+
   &-4 {
     &-dot {
       &.tp-swiper-dot {
@@ -607,19 +673,23 @@
         width: auto;
         display: flex;
         flex-direction: column;
+
         @media #{$sm, $xs} {
           right: 25px;
         }
       }
+
       .swiper-pagination-bullet {
         background-color: rgba($color: $white, $alpha: 0.3);
         margin: 3px 0 !important;
+
         &.swiper-pagination-bullet-active {
           background-color: var(--tp-common-white);
         }
       }
     }
   }
+
   &-title-4 {
     font-weight: 400;
     font-size: 60px;
@@ -640,17 +710,19 @@
     @media #{$sm} {
       font-size: 85px;
     }
+
     @media #{$xs} {
       font-size: 52px;
     }
   }
+
   &-content-4 {
     font-size: 16px;
     margin-bottom: 35px;
     color: var(--tp-common-white);
     @include animation-control(0.5s);
 
-    & > span {
+    &>span {
       font-family: var(--tp-ff-charm);
       font-weight: 400;
       font-size: 40px;
@@ -660,10 +732,14 @@
       margin-bottom: 12px;
     }
   }
-  &-height-4 {
-    min-height: 680px;
-    min-height: 630px;
 
+  &-height-4 {
+    // min-height: 680px;
+    min-height: 675px;
+
+    @media(max-width:1440px) {
+      min-height: 510px;
+    }
 
     @media #{$lg} {
       min-height: 500px;
@@ -676,10 +752,12 @@
     @media #{$sm, $xs} {
       min-height: 200px;
     }
+
     @media (max-width: 500px) {
       min-height: 200px;
     }
   }
+
   &-thumb-4 {
     position: absolute;
     bottom: 0;
@@ -695,7 +773,9 @@
     & img {
       @include animation-control(0.7s);
     }
+
     &-shape {
+
       &-1,
       &-2 {
         position: absolute;
@@ -710,6 +790,7 @@
         z-index: -1;
         @include tp-transition(all, 0.5s);
       }
+
       &-2 {
         bottom: -249px;
         background-color: transparent;
@@ -718,6 +799,7 @@
       }
     }
   }
+
   &-btn-4 {
     & a {
       padding: 10px 32px;
@@ -730,6 +812,7 @@
       }
     }
   }
+
   &-arrow-4 {
     & button {
       width: 54px;
@@ -744,14 +827,17 @@
       @extend %translateY1_2;
       z-index: 1;
       border-radius: 50%;
+
       &:hover {
         border-color: var(--tp-common-white);
         color: var(--tp-common-white);
       }
+
       @media(max-width: 1024px) {
         bottom: -30px;
         right: 55%;
       }
+
       @media (max-width: 768px) {
         bottom: -10px;
         right: 58%;
@@ -765,11 +851,13 @@
       & svg {
         @extend %tp-svg-y-2;
       }
+
       &.#{$theme-prifix}-slider-3-button-next {
         right: 49%;
       }
     }
   }
+
   &-video {
     position: absolute;
     right: 5%;
@@ -778,6 +866,7 @@
     height: 280px;
     border-radius: 50%;
     overflow: hidden;
+
     & video {
       width: 100%;
       height: 100%;
@@ -792,11 +881,13 @@
       border-radius: 0;
     }
   }
+
   &-play {
     position: absolute;
     right: 20.5%;
     top: 59%;
     z-index: 1;
+
     &-btn {
       display: inline-block;
       width: 120px;
@@ -812,6 +903,7 @@
       z-index: 1;
       bottom: -10%;
       left: -6%;
+
       & .text-shape {
         position: absolute;
         top: 6px;
@@ -840,9 +932,11 @@
           visibility: hidden;
           opacity: 0;
         }
+
         & .play-icon {
           display: none;
         }
+
         & .pause-icon {
           display: block;
         }
@@ -851,6 +945,7 @@
       }
     }
   }
+
   &-nav {
     position: absolute;
     bottom: 10%;
@@ -858,10 +953,12 @@
     z-index: 1;
     width: 230px;
     height: 180px;
+
     &-item {
       margin: 6px 0;
       opacity: 0.5;
       @extend %tp-transition;
+
       &.slick-slide.slick-current.slick-active {
         opacity: 1;
       }
@@ -870,6 +967,7 @@
         cursor: pointer;
       }
     }
+
     &-active {
       height: 100%;
     }
@@ -881,6 +979,7 @@
         display: inline-block;
       }
     }
+
     &-title {
       font-weight: 500;
       font-size: 20px;
@@ -905,32 +1004,41 @@
     @media #{$x3l} {
       font-size: 93px;
     }
+
     @media #{$xxl} {
       font-size: 75px;
     }
+
     @media #{$lg} {
       font-size: 65px;
     }
+
     @media #{$md} {
       font-size: 60px;
     }
+
     @media #{$xs, $sm} {
       font-size: 40px;
     }
   }
+
   &-content-5 {
     @media #{$x4l} {
       margin-left: 50px;
     }
+
     @media #{$x3l} {
       margin-left: 100px;
     }
+
     @media #{$xxl} {
       margin-left: 210px;
     }
+
     @media #{$sm, $xs} {
       margin-top: 55px;
     }
+
     & span {
       font-size: 40px;
       color: var(--tp-theme-green);
@@ -940,6 +1048,7 @@
       margin-bottom: 25px;
     }
   }
+
   &-height-5 {
     min-height: 700px;
 
@@ -951,9 +1060,11 @@
       min-height: 400px;
     }
   }
+
   &-subtitle-img {
     margin-bottom: 7px;
   }
+
   &-thumb {
     &-shape-5 {
       & .offer {
@@ -966,6 +1077,7 @@
           display: none;
         }
       }
+
       &.one {
         position: absolute;
         top: -200px;
@@ -981,15 +1093,19 @@
         }
       }
     }
+
     &-5 {
       @include transform(translate(-120px, -170px));
+
       @media #{$md} {
         @include transform(translate(54px, -165px));
       }
+
       @media #{$sm} {
         margin-bottom: 55px;
         @include transform(translate(66px, -223px));
       }
+
       @media #{$xs} {
         margin-top: 35px;
         @include transform(translate(50px, -120px));
@@ -1003,14 +1119,11 @@
         height: 548px;
         width: 548px;
         border-radius: 50%;
-        @include tp-gradient(
-          (
-            169.68deg,
+        @include tp-gradient((169.68deg,
             rgba(255, 255, 255, 0.6) 6.47%,
-            rgba(255, 255, 255, 0) 42.78%
-          )
-        );
+            rgba(255, 255, 255, 0) 42.78%));
         z-index: -1;
+
         @media #{$sm} {
           width: 450px;
           height: 450px;
@@ -1021,6 +1134,7 @@
           height: 280px;
         }
       }
+
       & img {
         @include transform(translate(-130px, 40px));
 
@@ -1031,6 +1145,7 @@
       }
     }
   }
+
   &-shape-5 {
     &-1 {
       position: absolute;
@@ -1047,22 +1162,26 @@
         top: 3%;
         left: 7%;
       }
+
       @media #{$xs} {
         top: 55%;
       }
     }
+
     &-2 {
       position: absolute;
       top: 14%;
       right: 7%;
       z-index: 1;
     }
+
     &-3 {
       position: absolute;
       bottom: 15%;
       left: 33%;
       z-index: 1;
     }
+
     &-4 {
       position: absolute;
       top: 36%;
@@ -1084,6 +1203,7 @@
     }
   }
 }
+
 .slick-active.slick-current {
   & .tp-slider-nav-item {
     opacity: 1;
