@@ -9,7 +9,6 @@ import pay from "@assets/img/footer/footer-pay.png";
 import footerInstaPost from "@assets/img/footer-instapost-1.png";
 
 import { MobileOutlined } from "@ant-design/icons";
-import { getPaddingAndBorder } from "react-range/lib/utils";
 import { Avatar } from "antd";
 import {
     FacebookOutlined,
@@ -68,7 +67,12 @@ const HomeFooter = () => {
                                             </h4>
                                             <div className="tp-footer-logo">
                                                 <Link href="/">
-                                                    <Image src={logo} alt="logo" />
+                                                    <Image 
+                                                        src={logo} 
+                                                        alt="logo" 
+                                                        width={150} // Set width
+                                                        height={80} // Set height
+                                                    />
                                                 </Link>
                                             </div>
                                             <div className="tp-footer-widget-content">
@@ -83,7 +87,7 @@ const HomeFooter = () => {
                                         </div>
                                     </div>
 
-                                    <div className="  col-lg-3 col-md-6 col-sm-12 footer-quicklinks">
+                                    <div className="col-lg-3 col-md-6 col-sm-12 footer-quicklinks">
                                         <div className="tp-footer-widget footer-col-4-2 mb-50">
                                             <h4
                                                 className="tp-footer-widget-title"
@@ -122,22 +126,6 @@ const HomeFooter = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                    <div className="tp-footer-widget footer-col-4-3 mb-50">
-                      <h4 className="tp-footer-widget-title">POLICIES</h4>
-                      <div className="tp-footer-widget-content">
-                        <ul>
-                         
-                          <li>
-                            <Link href="/shipping-and-exchange-policy">
-                              Shipping and Exchange Policy
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div> */}
 
                                     <div className="col-lg-3 col-md-6 col-sm-12">
                                         <div className="tp-footer-widget footer-col-4-2 mb-50">
@@ -245,42 +233,65 @@ const HomeFooter = () => {
                                                 className="tp-footer-widget-content"
                                                 style={{ overflow: "hidden" }}
                                             >
-
                                                 <div className="row">
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <Image src="/assets/img/home/footer/insta-image/1.jpg" style={{ width: "100%" }} />
+                                                        <Image 
+                                                            src="/assets/img/home/footer/insta-image/1.jpg" 
+                                                            width={100} // Set width
+                                                            height={100} // Set height
+                                                            style={{ width: "100%" }} 
+                                                            alt="Instagram Image 1"
+                                                        />
                                                     </div>
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <Image src="/assets/img/home/footer/insta-image/2.jpg" style={{ width: "100%" }} />
+                                                        <Image 
+                                                            src="/assets/img/home/footer/insta-image/2.jpg" 
+                                                            width={100} 
+                                                            height={100} 
+                                                            style={{ width: "100%" }} 
+                                                            alt="Instagram Image 2"
+                                                        />
                                                     </div>
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <Image src="/assets/img/home/footer/insta-image/3.jpg" style={{ width: "100%" }} />
+                                                        <Image 
+                                                            src="/assets/img/home/footer/insta-image/3.jpg" 
+                                                            width={100} 
+                                                            height={100} 
+                                                            style={{ width: "100%" }} 
+                                                            alt="Instagram Image 3"
+                                                        />
                                                     </div>
                                                 </div>
 
                                                 <div className="row mt-2">
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <Image src="/assets/img/home/footer/insta-image/4.jpg" style={{ width: "100%" }} />
+                                                        <Image 
+                                                            src="/assets/img/home/footer/insta-image/4.jpg" 
+                                                            width={100} 
+                                                            height={100} 
+                                                            style={{ width: "100%" }} 
+                                                            alt="Instagram Image 4"
+                                                        />
                                                     </div>
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <Image src="/assets/img/home/footer/insta-image/5.jpg" style={{ width: "100%" }} />
+                                                        <Image 
+                                                            src="/assets/img/home/footer/insta-image/5.jpg" 
+                                                            width={100} 
+                                                            height={100} 
+                                                            style={{ width: "100%" }} 
+                                                            alt="Instagram Image 5"
+                                                        />
                                                     </div>
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <Image src="/assets/img/home/footer/insta-image/6.jpg" style={{ width: "100%" }} />
+                                                        <Image 
+                                                            src="/assets/img/home/footer/insta-image/6.jpg" 
+                                                            width={100} 
+                                                            height={100} 
+                                                            style={{ width: "100%" }} 
+                                                            alt="Instagram Image 6"
+                                                        />
                                                     </div>
                                                 </div>
-
-                                                {/* <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7960308.336715554!2d80.242347!3d13.04399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e3de37ce75%3A0xd50eb41608bccab6!2sPraDe%20Jewels!5e0!3m2!1sen!2sin!4v1715580579688!5m2!1sen!2sin"
-                                                    style={{
-                                                        border: "0",
-                                                        width: "100%",
-                                                        height: "220px",
-                                                    }}
-                                                    allowfullscreen=""
-                                                    loading="lazy"
-                                                    referrerpolicy="no-referrer-when-downgrade"
-                                                ></iframe> */}
                                             </div>
                                         </div>
                                     </div>
@@ -309,13 +320,6 @@ const HomeFooter = () => {
                                                 </p>
                                             </div>
                                         </div>
-                                        {/* <div className="col-md-6">
-                    <div className="tp-footer-payment text-md-end">
-                      <p>
-                        <Image src={pay} alt="pay" />
-                      </p>
-                    </div>
-                  </div> */}
                                     </div>
                                 </div>
                             </div>

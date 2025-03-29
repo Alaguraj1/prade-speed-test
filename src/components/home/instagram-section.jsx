@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 const InstagramSection = () => {
-    const router = useRouter()
+    const router = useRouter();
     return (
         <>
             <section className="section-gap">
@@ -30,7 +30,11 @@ const InstagramSection = () => {
                                     <Image
                                         src="/assets/img/home/instagram/1.jpg"
                                         alt="image-1"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
+                                        width={500}  // Set image width
+                                        height={300} // Set image height
+                                        layout="responsive"  // This will allow the image to scale responsively
+                                        quality={75} // Optional for image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
                                         onClick={() => router?.push("/sale")}
                                     />
                                 </div>
@@ -39,7 +43,11 @@ const InstagramSection = () => {
                                     <Image
                                         src="/assets/img/home/instagram/2.jpg"
                                         alt="image-2"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
+                                        width={500}  // Set image width
+                                        height={300} // Set image height
+                                        layout="responsive"  // This will allow the image to scale responsively
+                                        quality={75} // Optional for image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
                                         onClick={() => router?.push("/sale")}
                                     />
                                 </div>
@@ -50,11 +58,9 @@ const InstagramSection = () => {
                         <div className="col-md-4  mb-lg-0 mb-2" style={{ display: "flex", alignItems: "center" }}>
                             <div style={{ display: "flex", alignItems: "center" }}>
                                 <video
-
                                     muted
                                     autoPlay
                                     loop
-                                    // style={{ pointerEvents: "none", width: "100%", borderRadius: "20px" }}
                                     style={{ width: "100%", borderRadius: "20px", cursor: "pointer", height: "100%" }}
                                     onClick={() => router?.push("/sale")}
                                 >
@@ -74,7 +80,11 @@ const InstagramSection = () => {
                                     <Image
                                         src="/assets/img/home/instagram/3.jpg"
                                         alt="image-3"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
+                                        width={500}  // Set image width
+                                        height={300} // Set image height
+                                        layout="responsive"  // This will allow the image to scale responsively
+                                        quality={75} // Optional for image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
                                         onClick={() => router?.push("/sale")}
                                     />
                                 </div>
@@ -83,7 +93,11 @@ const InstagramSection = () => {
                                     <Image
                                         src="/assets/img/home/instagram/4.jpg"
                                         alt="image-4"
-                                        style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
+                                        width={500}  // Set image width
+                                        height={300} // Set image height
+                                        layout="responsive"  // This will allow the image to scale responsively
+                                        quality={75} // Optional for image quality
+                                        style={{ borderRadius: "20px", cursor: "pointer" }}
                                         onClick={() => router?.push("/sale")}
                                     />
                                 </div>
