@@ -1,14 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { useGetCategoryListQuery } from "@/redux/features/productApi";
-// internal
-import { ArrowRightLong } from "@/svg";
-import banner_bg_1 from "@assets/img/category-1.jpg";
-import banner_bg_2 from "@assets/img/category-2.png";
-import banner_bg_3 from "@assets/img/category-3.png";
-import banner_bg_4 from "@assets/img/category-4.jpg";
-import banner_bg_5 from "@assets/img/category-5.png";
-import banner_bg_6 from "@assets/img/category-6.png";
+import React from "react";s
 import { useRouter } from "next/router";
 import Image from "next/image";
 
@@ -17,7 +7,6 @@ const HomeCategorySection = () => {
     return (
         <>
             <section className="section-gap">
-
                 <div className="row-container">
                     <div className="row">
                         <div className="col-12">
