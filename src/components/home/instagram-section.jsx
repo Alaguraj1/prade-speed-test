@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
@@ -26,7 +27,7 @@ const InstagramSection = () => {
                         <div className="col-md-4 mb-lg-0 mb-3">
                             <div className="row">
                                 <div className="col-xl-12 col-lg-12 featured-product-1">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/instagram/1.jpg"
                                         alt="image-1"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
@@ -35,7 +36,7 @@ const InstagramSection = () => {
                                 </div>
 
                                 <div className="col-xl-12 col-lg-12 featured-product-2">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/instagram/2.jpg"
                                         alt="image-2"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
@@ -70,7 +71,7 @@ const InstagramSection = () => {
                         <div className="col-md-4">
                             <div className="row">
                                 <div className="col-xl-12 col-lg-12 featured-product-1">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/instagram/3.jpg"
                                         alt="image-3"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
@@ -79,7 +80,7 @@ const InstagramSection = () => {
                                 </div>
 
                                 <div className="col-xl-12 col-lg-12 featured-product-2">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/instagram/4.jpg"
                                         alt="image-4"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
