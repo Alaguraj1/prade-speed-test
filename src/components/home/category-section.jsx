@@ -10,6 +10,7 @@ import banner_bg_4 from "@assets/img/category-4.jpg";
 import banner_bg_5 from "@assets/img/category-5.png";
 import banner_bg_6 from "@assets/img/category-6.png";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const HomeCategorySection = () => {
     const router = useRouter();
@@ -35,7 +36,7 @@ const HomeCategorySection = () => {
                         <div className="col-md-6 col-12">
                             <div className="row">
                                 <div className="col-xl-6 col-lg-6 category-section-1">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/Catergories/1.jpg"
                                         alt="image-1"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
@@ -48,7 +49,7 @@ const HomeCategorySection = () => {
                                 </div>
 
                                 <div className="col-xl-6 col-lg-6 category-section-2">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/Catergories/2.jpg"
                                         alt="image-2"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
@@ -61,7 +62,7 @@ const HomeCategorySection = () => {
                                 </div>
 
                                 <div className="col-xl-6 col-lg-6 category-section-3">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/Catergories/3.jpg"
                                         alt="image-3"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }}
@@ -76,7 +77,7 @@ const HomeCategorySection = () => {
 
                                 <div className="col-xl-6 col-lg-6  category-section-4">
 
-                                    <img
+                                    <Image
                                         src="/assets/img/home/Catergories/4.jpg"
                                         alt="image-4"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
@@ -93,7 +94,7 @@ const HomeCategorySection = () => {
                         <div className="col-md-6 col-12">
                             <div className="row">
                                 <div className="col-xl-6 col-lg-6  category-section-5">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/Catergories/5.jpg"
                                         alt="image-5"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {
@@ -106,7 +107,7 @@ const HomeCategorySection = () => {
                                 </div>
 
                                 <div className="col-xl-6 col-lg-6">
-                                    <img
+                                    <Image
                                         src="/assets/img/home/Catergories/6.jpg"
                                         alt="image-6"
                                         style={{ width: "100%", borderRadius: "20px", cursor: "pointer" }} onClick={() => {

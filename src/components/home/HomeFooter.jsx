@@ -248,25 +248,25 @@ const HomeFooter = () => {
 
                                                 <div className="row">
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <img src="/assets/img/home/footer/insta-image/1.jpg" style={{ width: "100%" }} />
+                                                        <Image src="/assets/img/home/footer/insta-image/1.jpg" style={{ width: "100%" }} />
                                                     </div>
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <img src="/assets/img/home/footer/insta-image/2.jpg" style={{ width: "100%" }} />
+                                                        <Image src="/assets/img/home/footer/insta-image/2.jpg" style={{ width: "100%" }} />
                                                     </div>
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <img src="/assets/img/home/footer/insta-image/3.jpg" style={{ width: "100%" }} />
+                                                        <Image src="/assets/img/home/footer/insta-image/3.jpg" style={{ width: "100%" }} />
                                                     </div>
                                                 </div>
 
                                                 <div className="row mt-2">
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <img src="/assets/img/home/footer/insta-image/4.jpg" style={{ width: "100%" }} />
+                                                        <Image src="/assets/img/home/footer/insta-image/4.jpg" style={{ width: "100%" }} />
                                                     </div>
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <img src="/assets/img/home/footer/insta-image/5.jpg" style={{ width: "100%" }} />
+                                                        <Image src="/assets/img/home/footer/insta-image/5.jpg" style={{ width: "100%" }} />
                                                     </div>
                                                     <div className="col-md-3 col-4" style={{ paddingRight: "3px", paddingLeft: "3px" }}>
-                                                        <img src="/assets/img/home/footer/insta-image/6.jpg" style={{ width: "100%" }} />
+                                                        <Image src="/assets/img/home/footer/insta-image/6.jpg" style={{ width: "100%" }} />
                                                     </div>
                                                 </div>
 
