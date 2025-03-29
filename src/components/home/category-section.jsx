@@ -1,12 +1,13 @@
-import React from "react";s
+import React from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
 const HomeCategorySection = () => {
-    const router = useRouter();
+    const router = useRouter(); 
     return (
         <>
             <section className="section-gap">
+
                 <div className="row-container">
                     <div className="row">
                         <div className="col-12">
